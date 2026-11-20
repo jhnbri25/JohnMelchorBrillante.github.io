@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>John Melchor Brillante | Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="prog"></div><nav aria-label="Main"><div class="wrap"><b>JM</b><div class="links"><a href="#about">About</a><a href="#work">Projects</a><a href="#case-study">Case study</a><a href="#automation">Automation</a><a href="#certs">Certificates</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+
+<main id="main">
+<header class="hero" id="hero"><i class="glow"></i><div class="wrap">
+  <p class="role">3rd-year Computer Science student at Gordon College, from Subic, Zambales</p>
+  <h1 id="name" aria-label="John Melchor Brillante"></h1>
+  <p class="lede">I build apps that fix everyday problems. RoomieTrack, my solo capstone project, helps housemates split bills fairly and share chores. Now I’m adding cybersecurity and cloud skills.</p>
+  <div class="cta"><a class="btn main" href="https://roomie-track-pwa-trial.vercel.app/" target="_blank" rel="noopener">Try RoomieTrack live</a><a class="btn" href="#work">See my work</a><a class="btn" href="https://github.com/jhnbri25" target="_blank" rel="noopener">GitHub</a></div>
+</div></header>
+
+<div class="mq" aria-hidden="true"><div><span>HTML</span><span>CSS</span><span>Python 3</span><span>Cybersecurity</span><span>Cloud</span><span>JavaScript</span><span>Supabase</span><span>n8n</span><span>PWA</span><span>RoomieTrack</span><span>Problem solving</span><span>HTML</span><span>CSS</span><span>Python 3</span><span>Cybersecurity</span><span>Cloud</span><span>JavaScript</span><span>Supabase</span><span>n8n</span><span>PWA</span><span>RoomieTrack</span><span>Problem solving</span></div></div>
+
+<section id="about"><div class="wrap"><div class="about">
+  <figure class="ph"><img src="assets/portrait.webp" alt="Portrait of John Melchor Brillante" width="360" height="360"></figure>
+  <div><h2>About me</h2>
+  <p>I’m a third-year Computer Science student at Gordon College in Olongapo City, and I live in Subic, Zambales.</p>
+  <p>I like turning everyday problems into working software. For my Application Development and Emerging Technologies class I built RoomieTrack alone: the database, the debt-settling algorithm, the chore scheduler and the interface. I also finished Python, HTML and CSS courses with Cisco Networking Academy and started a cybersecurity path with Fortinet.</p>
+  <ul class="facts"><li><b>Studying</b><span>Computer Science, 3rd year</span></li><li><b>School</b><span>Gordon College, College of Computer Studies</span></li><li><b>Based in</b><span>Subic, Zambales</span></li><li><b>Focus</b><span>Web apps, algorithms, security</span></li></ul>
+  <figure class="hike"><img src="assets/hiking.webp" alt="John hiking on a mountain ridge at sunset" width="800" height="600" loading="lazy"><figcaption>When I’m not coding, I’m out hiking.</figcaption></figure>
+  </div></div></div></section>
+
+<section id="work"><div class="wrap">
+  <h2>RoomieTrack</h2>
+  <p class="sub">A progressive web app for students who share a home. I built it alone as my capstone project, from October 2025 to January 2026.</p>
+  <div class="proj">
+    <div>
+      <ul class="feat">
+        <li><strong>Smart Splitting</strong><span>Equal, percentage or exact splits with multiple payers. The Debt Eraser uses a greedy algorithm to settle everyone in the fewest transfers, cutting them by 40% to 65% in my tests.</span></li>
+        <li><strong>Chore rotation</strong><span>A fairness heuristic gives each new chore to the least-loaded roommate, then rotates. Workloads stay within one slot of each other, and housemates can request swaps.</span></li>
+        <li><strong>Works like a real app</strong><span>Installs from the browser and opens offline. Includes dark mode, QR login from desktop to phone, and XP, badges and a leaderboard.</span></li>
+      </ul>
+      <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript ES6+</li><li>Supabase</li><li>PostgreSQL</li><li>Row-Level Security</li><li>Service Worker</li><li>Vercel</li></ul>
+      <a class="btn main" href="https://roomie-track-pwa-trial.vercel.app/" target="_blank" rel="noopener">Launch RoomieTrack</a><a class="btn" href="#case-study">Read the case study</a>
+    </div>
+    <div>
+      <div class="phone" role="group" aria-label="Interactive demo of the Smart Debt Eraser">
+        <h3>Settle</h3><small>Balances for my test household</small>
+        <div class="panel">
+          <button class="tog" id="tog" aria-pressed="true"><span>Simplified Debts</span><i class="sw"></i></button>
+          <div class="count on" id="count"><b id="num">3</b><span id="lbl">transfers with the Debt Eraser</span></div>
+          <div class="bars" id="bars" aria-live="polite"></div>
+        </div>
+      </div>
+      <p class="hint">Try the switch. It’s the same idea as in the real app.</p>
+    </div>
+  </div>
+  <ul class="stats"><li><b>40–65%</b><span>fewer transfers in my tests with 3 to 6 roommates</span></li><li><b>±1</b><span>chore slot difference between roommates</span></li><li><b>7</b><span>sprints, planned and finished solo in 10 weeks</span></li><li><b>8</b><span>achievement badge types</span></li></ul>
+  </div></section>
+
+<section id="case-study" class="cs"><div class="wrap">
+  <h2>RoomieTrack case study</h2>
+  <p class="sub">How I took a shared-housing problem from idea to a live app, working alone.</p>
+  <dl class="meta"><div><dt>My role</dt><dd>Solo developer, designer, tester and writer</dd></div><div><dt>Timeline</dt><dd>Oct 2025 to Jan 2026</dd></div><div><dt>Context</dt><dd>Capstone for Application Development and Emerging Technologies, Gordon College</dd></div><div><dt>Stack</dt><dd>HTML5, CSS3, JavaScript, Supabase, PWA</dd></div></dl>
+  <h3>Overview</h3>
+  <p>RoomieTrack is a progressive web app for students who share a home. It tracks shared expenses, splits them fairly, schedules chores and shows the shortest way to settle debts. It installs from the browser and works on phones and desktops. <a href="https://roomie-track-pwa-trial.vercel.app/" target="_blank" rel="noopener">Try the live app</a>.</p>
+  <h3>The problem</h3>
+  <p>Roommates track bills and chores in chat messages and notebooks. Costs get forgotten, chores pile up on the same person, and settling up takes many small payments. That causes arguments. I wanted one place where everyone sees the same balances and the same chore schedule.</p>
+  <h3>Target users</h3>
+  <div class="two"><p><strong>Student roommates</strong> aged 17 to 25 who share a dorm or apartment. They log expenses, check what they owe and do their chores. They need a simple phone-first app.</p><p><strong>Room owners</strong> who create the room, invite housemates and set up the chore schedule. A room supports up to 10 people.</p></div>
+  <h3>My process</h3>
+  <p>I worked in two-week Scrum sprints with my own backlog, so I could ship something working every sprint and drop features that did not fit the January deadline.</p>
+  <ol class="sprints"><li><b>Sprint 0</b><span>Project setup, database schema, sign-in and login page</span></li><li><b>Sprints 1</b><span>Expense tracking, three split modes and friends</span></li><li><b>Sprint 2</b><span>Chores, fairness heuristic and swap requests</span></li><li><b>Sprint 3</b><span>Settle tab and the debt-minimization algorithm</span></li><li><b>Sprint 4</b><span>XP, badges, leaderboard and dark mode</span></li><li><b>Sprint 5</b><span>Installable app setup, rooms tab and polish</span></li><li><b>Sprint 6</b><span>Testing, bug fixes and documentation</span></li></ol>
+  <h3>Designs</h3>
+  <p>I used a purple palette with Nunito and DM Sans, simple cards and a floating add button, so the main action is always in reach on a phone. Dark mode works by swapping CSS variables, so every screen themes the same way. The data model has users, rooms, expenses, expense splits, chores, chore slots and swap requests, with Row-Level Security so people only see their own room.</p>
+  <ul class="pal" aria-label="Color palette"><li><i style="background:#7c3aed"></i>#7C3AED primary</li><li><i style="background:#10b981"></i>#10B981 owed to you</li><li><i style="background:#ef3b5d"></i>#EF3B5D you owe</li><li><i style="background:#14102b"></i>#14102B dark mode</li></ul>
+  <div class="gal">
+    <figure><img src="assets/login.webp" alt="RoomieTrack login screen with email, Google and QR sign-in" loading="lazy"><figcaption>Login with email, Google or QR</figcaption></figure>
+    <figure><img src="assets/home.webp" alt="RoomieTrack home screen with recent expenses and balances" loading="lazy"><figcaption>Home: expenses and what you owe</figcaption></figure>
+    <figure><img src="assets/settle.webp" alt="RoomieTrack Settle screen with balances and the Smart Debt Eraser" loading="lazy"><figcaption>Settle: balances and the Debt Eraser</figcaption></figure>
+    <figure><img src="assets/chores.webp" alt="RoomieTrack chore rotation screen with weekly load" loading="lazy"><figcaption>Chores: weekly rotation and load</figcaption></figure>
+  </div>
+  <h3>Decisions I made and what happened</h3>
+  <div class="tw"><table class="dec"><thead><tr><th scope="col">Decision</th><th scope="col">Why</th><th scope="col">Result</th></tr></thead><tbody>
+  <tr><th scope="row">Greedy debt algorithm</th><td>Work out each person’s net balance, then match the biggest debtor with the biggest creditor until everyone is at zero.</td><td>40% to 65% fewer transfers in my tests with 3 to 6 roommates.</td></tr>
+  <tr><th scope="row">Fairness heuristic for chores</th><td>Start each new chore with the roommate who has the fewest slots, then rotate.</td><td>Workloads stay within one slot of each other after three chores are created.</td></tr>
+  <tr><th scope="row">Supabase instead of my own server</th><td>As a solo developer I needed sign-in, a database, live updates and data rules without running a backend.</td><td>Housemates see changes live and can only read their own room’s data.</td></tr>
+  <tr><th scope="row">Installable web app, not native apps</th><td>No app store, one codebase, and it works offline for students with weak connections.</td><td>Installs on Android, iOS and desktop and passed the Lighthouse PWA audit.</td></tr>
+  <tr><th scope="row">Plain JavaScript and CSS variables</th><td>No build step, and a small codebase I could fully understand.</td><td>Dark mode and theming work across every screen.</td></tr>
+  </tbody></table></div>
+  <h3>Final result</h3>
+  <p>All planned features shipped on time: sign-in, rooms, three split modes, the Debt Eraser, chore rotation with swaps, XP and badges, dark mode and installation. I tested the main tabs, sign-in, split maths and the algorithm against manual cases with up to 6 roommates and 20 or more expenses, in Chrome, Safari and Firefox. One known gap: changes made offline do not sync after reconnecting.</p>
+  <h3>Lessons learned</h3>
+  <ul class="lessons"><li><strong>Money needs careful rounding.</strong> Decimal errors broke the balances until I added a small tolerance when comparing amounts.</li><li><strong>Security rules need planning.</strong> Row-Level Security saves a lot of work, but shared rooms need carefully designed policies.</li><li><strong>Caching depends on the file.</strong> Pages need fresh data, while fonts and styles can load from the cache, so I picked a strategy per file type.</li></ul>
+  <p><strong>Next steps:</strong> offline sync that resolves conflicts, push reminders for chores, and chore preferences in the fairness heuristic. <strong>Team work:</strong> RoomieTrack is entirely my own work. My team project is the <a href="#automation">recruitment automation</a> below.</p>
+</div></section>
+
+<section id="automation"><div class="wrap">
+  <h2>AI-assisted recruitment</h2>
+  <p class="sub">A group project with Rylan Bernardino and Adrian Raymundo for One Source General Solutions Inc., a recruitment agency in Olongapo City. It is the topic of our BS Computer Science research paper (September 2026).</p>
+  <div class="auto">
+    <div>
+      <ul class="feat">
+        <li><strong>The problem</strong><span>HR staff read every Google Form response by hand, sent interview schedules by hand, and answered every applicant email themselves.</span></li>
+        <li><strong>The AI inquiry layer</strong><span>Gemini reads each email, works out what the applicant wants, answers routine questions from an HR-approved information sheet, and sends interested applicants the application form link.</span></li>
+        <li><strong>People stay in charge</strong><span>Unclear or sensitive emails go to an HR review sheet and trigger a Telegram alert, so a staff member decides.</span></li>
+      </ul>
+      <ul class="tags"><li>n8n</li><li>Google Gemini</li><li>Gmail</li><li>Google Forms</li><li>Google Sheets</li><li>Telegram</li></ul>
+    </div>
+    <figure class="shot"><img src="assets/n8n-workflows.webp" alt="n8n canvas showing the Email Automation workflows for the inquiry layer test" loading="lazy" width="790" height="610"><figcaption>Our n8n workflows for the inquiry layer test</figcaption></figure>
+  </div>
+  <ol class="flow">
+    <li><strong>Read the email</strong><span>The workflow checks the Gmail inbox every minute.</span></li>
+    <li><strong>Classify the intent</strong><span>Gemini sorts it: apply, requirements, interview question, or needs a person.</span></li>
+    <li><strong>Reply or flag</strong><span>Routine questions get a reply. Unclear ones go to HR.</span></li>
+    <li><strong>Send the form link</strong><span>Interested applicants get the application form. Emails with a CV skip the classifier.</span></li>
+    <li><strong>Screen and schedule</strong><span>A rule-based workflow checks the form response and emails the exam and interview invitation.</span></li>
+  </ol>
+  <ul class="stats"><li><b>3.89/5</b><span>average rating of the bottleneck statements from 6 HR staff</span></li><li><b>80</b><span>core test scenarios planned to measure accuracy</span></li><li><b>5</b><span>steps from first email to interview invitation</span></li></ul>
+  <div class="next"><div><h3>Next project coming soon</h3><p>I’m working on something new. It will appear here.</p></div><a class="btn" href="#contact">Get updates</a></div>
+</div></section>
+
+<section id="certs"><div class="wrap">
+  <h2>Certificates</h2>
+  <p class="sub">Six credentials earned in 2026 from Fortinet and Cisco Networking Academy.</p>
+  <ul class="certs">
+    <li class="cert big"><div><h3>Fortinet NSE 1 Certified in Cybersecurity</h3><em>Fortinet Training Institute. Valid until November 8, 2028.</em></div><span class="when">Nov 8, 2026</span></li>
+    <li class="cert"><h3>Cybersecurity and Cloud Fundamentals 1.0</h3><em>Fortinet Training Institute</em><span class="when">Nov 8, 2026</span></li>
+    <li class="cert"><h3>Python Essentials 2</h3><em>Cisco Networking Academy with OpenEDG Python Institute. Object-oriented, multi-module programs.</em><span class="when">Apr 29, 2026</span></li>
+    <li class="cert"><h3>HTML Essentials</h3><em>Cisco Networking Academy with JS Institute. Semantic, accessible pages and forms.</em><span class="when">Apr 28, 2026</span></li>
+    <li class="cert"><h3>CSS Essentials</h3><em>Cisco Networking Academy with JS Institute. Flexbox, Grid, animations and responsive design.</em><span class="when">Apr 28, 2026</span></li>
+    <li class="cert"><h3>Python Essentials 1</h3><em>Cisco Networking Academy with OpenEDG Python Institute. Core Python 3 programming.</em><span class="when">Apr 27, 2026</span></li>
+  </ul>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>What I work with</h2>
+  <p class="sub">Skills backed by the courses above and by building RoomieTrack.</p>
+  <div class="sk">
+    <div><h3>Web apps</h3><p>HTML5, CSS3 and JavaScript with responsive layouts, dark mode and installable PWAs.</p></div>
+    <div><h3>Backend and data</h3><p>Supabase, PostgreSQL schema design and Row-Level Security for multi-user apps.</p></div>
+    <div><h3>Algorithms</h3><p>Greedy debt minimization and a fairness heuristic, checked against manual test cases.</p></div>
+    <div><h3>Python</h3><p>Python 3 up to object-oriented design, certified by Cisco Networking Academy.</p></div>
+    <div><h3>Automation</h3><p>n8n workflows connecting Gmail, Google Sheets and Gemini, with a person in the loop.</p></div>
+    <div><h3>Security and cloud</h3><p>Fortinet NSE 1 and cloud fundamentals, the base for my next steps.</p></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Let’s build something.</h2>
+  <p class="sub">Open to projects, internships and collaborations. Message me on Instagram or send an email.</p>
+  <a class="mail" href="mailto:brillantejm72@gmail.com">brillantejm72@gmail.com</a>
+  <div class="cta"><a class="btn ig" href="https://instagram.com/jhn_bri" target="_blank" rel="noopener">Instagram @jhn_bri</a><a class="btn main" href="https://github.com/jhnbri25" target="_blank" rel="noopener">GitHub profile</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 John Melchor Brillante</div></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
