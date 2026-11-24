@@ -17,7 +17,7 @@
 <header class="hero" id="hero"><i class="glow"></i><div class="wrap">
   <p class="role">3rd-year Computer Science student at Gordon College, from Subic, Zambales</p>
   <h1 id="name" aria-label="John Melchor Brillante"></h1>
-  <p class="lede">I build apps that fix everyday problems. RoomieTrack, my solo capstone project, helps housemates split bills fairly and share chores. Now I’m adding cybersecurity and cloud skills.</p>
+  <p class="lede">I build apps that fix everyday problems. RoomieTrack, my solo project, helps housemates split bills fairly and share chores. Now I’m adding cybersecurity and cloud skills.</p>
   <div class="cta"><a class="btn main" href="https://roomie-track-pwa-trial.vercel.app/" target="_blank" rel="noopener">Try RoomieTrack live</a><a class="btn" href="#work">See my work</a><a class="btn" href="https://github.com/jhnbri25" target="_blank" rel="noopener">GitHub</a></div>
 </div></header>
 
@@ -34,7 +34,7 @@
 
 <section id="work"><div class="wrap">
   <h2>RoomieTrack</h2>
-  <p class="sub">A progressive web app for students who share a home. I built it alone as my capstone project, from October 2025 to January 2026.</p>
+  <p class="sub">A progressive web app for students who share a home. I built it alone as a project, from October 2025 to January 2026.</p>
   <div class="proj">
     <div>
       <ul class="feat">
@@ -63,7 +63,7 @@
 <section id="case-study" class="cs"><div class="wrap">
   <h2>RoomieTrack case study</h2>
   <p class="sub">How I took a shared-housing problem from idea to a live app, working alone.</p>
-  <dl class="meta"><div><dt>My role</dt><dd>Solo developer, designer, tester and writer</dd></div><div><dt>Timeline</dt><dd>Oct 2025 to Jan 2026</dd></div><div><dt>Context</dt><dd>Capstone for Application Development and Emerging Technologies, Gordon College</dd></div><div><dt>Stack</dt><dd>HTML5, CSS3, JavaScript, Supabase, PWA</dd></div></dl>
+  <dl class="meta"><div><dt>My role</dt><dd>Solo developer, designer, tester and writer</dd></div><div><dt>Timeline</dt><dd>Oct 2025 to Jan 2026</dd></div><div><dt>Context</dt><dd>Project for Application Development and Emerging Technologies, Gordon College</dd></div><div><dt>Stack</dt><dd>HTML5, CSS3, JavaScript, Supabase, PWA</dd></div></dl>
   <h3>Overview</h3>
   <p>RoomieTrack is a progressive web app for students who share a home. It tracks shared expenses, splits them fairly, schedules chores and shows the shortest way to settle debts. It installs from the browser and works on phones and desktops. <a href="https://roomie-track-pwa-trial.vercel.app/" target="_blank" rel="noopener">Try the live app</a>.</p>
   <h3>The problem</h3>
@@ -119,6 +119,46 @@
     <li><strong>Screen and schedule</strong><span>A rule-based workflow checks the form response and emails the exam and interview invitation.</span></li>
   </ol>
   <ul class="stats"><li><b>3.89/5</b><span>average rating of the bottleneck statements from 6 HR staff</span></li><li><b>80</b><span>core test scenarios planned to measure accuracy</span></li><li><b>5</b><span>steps from first email to interview invitation</span></li></ul>
+  <p class="cs-link"><a class="btn" href="#automation-case-study">Read the case study</a></p>
+</div></section>
+
+<section id="automation-case-study" class="cs"><div class="wrap">
+  <h2>AI-assisted recruitment case study</h2>
+  <p class="sub">How our team added an AI inquiry layer to a real recruitment agency’s workflow while keeping HR staff in charge.</p>
+  <dl class="meta"><div><dt>My role</dt><dd>Application form builder, QA tester and n8n automation support</dd></div><div><dt>Team</dt><dd>Rylan Bernardino, John Melchor Brillante, Adrian Raymundo</dd></div><div><dt>Partner</dt><dd>One Source General Solutions Inc., Olongapo City</dd></div><div><dt>Context</dt><dd>BS Computer Science research paper, Gordon College, September 2026</dd></div><div><dt>Stack</dt><dd>n8n, Google Gemini, Gmail, Google Forms, Google Sheets, Telegram</dd></div></dl>
+  <h3>Overview</h3>
+  <p>The system automates the first steps of hiring at a recruitment agency. An AI layer reads applicant emails, answers routine questions and sends interested applicants the application form. A rule-based workflow then screens each form response and emails the exam and interview invitation. It runs on the Google Forms, Sheets and Gmail setup the agency already uses instead of replacing it.</p>
+  <h3>The problem</h3>
+  <p>Applicants applied through a Google Form, and HR staff checked every response in the linked sheet by hand before sending a schedule. Applicants also emailed questions before applying, and staff answered each one themselves. Many of these questions were already answered in the job posting. Replies were slow outside office hours, and they could differ depending on who answered.</p>
+  <h3>Who it’s for</h3>
+  <div class="two"><p><strong>HR and recruitment staff</strong> who handle applicant emails and screening. They need routine questions handled for them and a clear queue of emails that need a person.</p><p><strong>Job applicants</strong> who email before applying. They need fast, consistent answers and a direct path to the application form, even at night or on weekends.</p></div>
+  <h3>Our process</h3>
+  <p>We split the study into three phases, one for each research objective, so every design choice came from evidence about the agency.</p>
+  <ol class="sprints"><li><b>Phase 1</b><span>Find the bottlenecks: a survey of 6 HR and admin staff and a review of the agency’s forms, sheets and email steps</span></li><li><b>Phase 2</b><span>Set the requirements: intent categories, rules for when a person must review, an HR-approved information sheet, and the hand-off to screening</span></li><li><b>Phase 3</b><span>Build and evaluate: tune on 40 development scenarios, then test on 80 core scenarios and 10 edge cases in English and mixed English–Filipino</span></li></ol>
+  <h3>My role and the team’s work</h3>
+  <div class="two"><div><p><strong>What I did</strong></p><ul class="lessons"><li><strong>Built the application form.</strong> I set up the Google Form that applicants fill in after the inquiry stage. Its responses feed the screening and interview-scheduling workflow, so the fields had to match the screening rules.</li><li><strong>Ran quality assurance.</strong> I tested the workflows end to end, checking that replies, flags, form links and invitations went out correctly, and reported what broke.</li><li><strong>Helped build the n8n automation.</strong> I worked with the team on the n8n workflows that connect Gmail, Gemini, Google Sheets and Telegram.</li></ul></div><div><p><strong>What we did as a team</strong></p><p>The three of us ran the bottleneck survey and document review, agreed on the intent categories and human-review rules, and wrote the research paper together. The AI inquiry layer and the screening workflow are shared work, not mine alone.</p></div></div>
+  <h3>What the survey found</h3>
+  <p>All twelve bottleneck statements were rated as real problems, with an overall mean of 3.89 out of 5. The results shaped what the AI layer had to do first.</p>
+  <ul class="stats"><li><b>4.50</b><span>applicants ask for information already in the posting or form</span></li><li><b>4.50</b><span>staff repeat the same information in many replies</span></li><li><b>4.17</b><span>delayed replies may make applicants lose interest</span></li><li><b>4.67</b><span>some inquiries should never be answered without staff review</span></li></ul>
+  <p>Four of the six staff said they handle more than 50 inquiries a week. When asked to pick their three hardest problems, four of the six chose emails that arrive when they cannot respond, which is the gap an always-on system fills.</p>
+  <h3>Decisions we made and why</h3>
+  <div class="tw"><table class="dec"><thead><tr><th scope="col">Decision</th><th scope="col">Why</th><th scope="col">Effect</th></tr></thead><tbody>
+  <tr><th scope="row">Build on the agency’s Google tools</th><td>Staff already used Forms, Sheets and Gmail, so a new platform would add training and cost.</td><td>The system fits into their current work with no new software for staff to learn.</td></tr>
+  <tr><th scope="row">AI only for inquiries, fixed rules for screening</th><td>Screening decisions must be predictable and explainable to applicants.</td><td>Gemini handles open-ended questions; qualification checks follow rules HR can read.</td></tr>
+  <tr><th scope="row">Answers come from an HR-approved sheet</th><td>The model must not make up requirements, promise interviews or offer jobs.</td><td>Every reply can be checked against one source that HR controls.</td></tr>
+  <tr><th scope="row">Flag anything unclear to a person</th><td>Staff strongly agreed that complaints and unclear requests need human judgment.</td><td>Low-confidence, invalid or sensitive emails go to an HR review sheet with a Telegram alert and never get an automatic reply.</td></tr>
+  <tr><th scope="row">Emails with a CV skip the classifier</th><td>The system does not read attachments, and an applicant sending a CV clearly wants to apply.</td><td>They get the application form link straight away.</td></tr>
+  </tbody></table></div>
+  <h3>Designs</h3>
+  <p>The system is a set of n8n workflows. The inquiry workflow checks Gmail every minute, sends each email and the HR-approved information sheet to Gemini, and acts on Gemini’s answer: reply, flag for HR, or send the form link. The screening workflow reads each new form response from Google Sheets, checks it against fixed rules and emails the invitation. Flagged emails land in an HR review sheet with the reason, and HR gets a Telegram alert.</p>
+  <figure class="shot"><img src="assets/n8n-workflows.webp" alt="n8n canvas showing the email inquiry workflows of the recruitment system" loading="lazy" width="790" height="610"><figcaption>Our n8n inquiry workflows</figcaption></figure>
+  <h3>Final result</h3>
+  <p>The system is built and working. The inbox is checked every minute, so routine emails get a reply or the form link without waiting for staff, unclear emails reach HR with an alert, and submitted forms are screened and sent an exam and interview invitation without manual sorting. It runs on the agency’s existing Gmail, Forms and Sheets.</p>
+  <h3>How we measure it</h3>
+  <p>We test with written scenarios instead of real applicant emails to protect applicant privacy under the Data Privacy Act of 2012. The workflow is frozen before testing, and each test email is sent once to a separate test inbox. We measure intent classification accuracy, routing accuracy, response accuracy, response time and how often HR needs to step in. Two raters score each reply on four checks: correct facts, answers the question, suitable tone, and no promises the agency did not make. HR staff also handle 40 of the same scenarios by hand so the system can be compared against their usual way of working.</p>
+  <h3>Lessons learned</h3>
+  <ul class="lessons"><li><strong>Ask the users before building.</strong> The survey showed repetition was the biggest pain, so the information sheet and routine replies came first.</li><li><strong>Design the human hand-off as carefully as the AI.</strong> Deciding when the system must stop and alert a person mattered as much as the classifier itself.</li><li><strong>QA found what the design missed.</strong> Testing the whole flow from first email to invitation, not one workflow at a time, is how we checked that each step handed the right data to the next.</li><li><strong>Keep test data separate from tuning data.</strong> Tuning on the 40 development scenarios and holding back the 80 test scenarios keeps our accuracy figures honest.</li></ul>
+  <p><strong>Limits:</strong> the system covers email only, not the applicant group chat, and it does not read attachments. The survey reflects six staff at one agency. <strong>Next steps:</strong> extend the system to the applicant group chat and add the full evaluation results to this page.</p>
   <div class="next"><div><h3>Next project coming soon</h3><p>I’m working on something new. It will appear here.</p></div><a class="btn" href="#contact">Get updates</a></div>
 </div></section>
 
